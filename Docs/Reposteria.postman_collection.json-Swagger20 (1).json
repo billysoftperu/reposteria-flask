@@ -1,0 +1,379 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Reposteria",
+    "contact": {}
+  },
+  "host": "127.0.0.1:5000",
+  "basePath": "/",
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/postres": {
+      "post": {
+        "summary": "/postres",
+        "tags": [
+          "Postres"
+        ],
+        "operationId": "/postres",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/~1postresrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "get": {
+        "description": "El endpoin que devuelve todos los postres ",
+        "summary": "/postres",
+        "tags": [
+          "Postres"
+        ],
+        "operationId": "Get/postres",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/postres/1": {
+      "get": {
+        "summary": "/postres/<id>",
+        "tags": [
+          "Postres"
+        ],
+        "operationId": "/postres/<id>",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "put": {
+        "summary": "/postres/<id>",
+        "tags": [
+          "Postres"
+        ],
+        "operationId": "Put/postres/<id>",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/~1postres~1%3Cid%3Erequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "delete": {
+        "summary": "/postres/<id>1",
+        "tags": [
+          "Postres"
+        ],
+        "operationId": "/postres/<id>1",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/busqueda_postre": {
+      "get": {
+        "summary": "/busqueda_postre",
+        "tags": [
+          "Postres"
+        ],
+        "operationId": "/busqueda_postre",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/preparaciones": {
+      "post": {
+        "description": "Endpoint para agregarr una prepararcion",
+        "summary": "/preparaciones",
+        "tags": [
+          "Preparacion"
+        ],
+        "operationId": "/preparaciones",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/preparaciones/8": {
+      "get": {
+        "summary": "/preparaciones/<int:id>",
+        "tags": [
+          "Preparacion"
+        ],
+        "operationId": "/preparaciones/<int:id>",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/ingredientes": {
+      "get": {
+        "description": "Endpoint para visualizar todos los intgredientes",
+        "summary": "/ingredientes",
+        "tags": [
+          "Ingredientes"
+        ],
+        "operationId": "/ingredientes",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "post": {
+        "description": "Endpoint para la creación de un ingrediente",
+        "summary": "/ingredientes",
+        "tags": [
+          "Ingredientes"
+        ],
+        "operationId": "Post/ingredientes",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/~1ingredientesrequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/ingredientes/1": {
+      "get": {
+        "summary": "/ingredientes/<int:id>",
+        "tags": [
+          "Ingredientes"
+        ],
+        "operationId": "/ingredientes/<int:id>",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "put": {
+        "summary": "/ingredientes/<int:id>",
+        "tags": [
+          "Ingredientes"
+        ],
+        "operationId": "Put/ingredientes/<int:id>",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/~1ingredientes~1%3Cint%3Aid%3Erequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "/postresrequest": {
+      "title": "/postresrequest",
+      "example": {
+        "nombre": "Selva Negra",
+        "porcion": "Mediano"
+      },
+      "type": "object",
+      "properties": {
+        "nombre": {
+          "type": "string"
+        },
+        "porcion": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "nombre",
+        "porcion"
+      ]
+    },
+    "/postres/<id>request": {
+      "title": "/postres/<id>request",
+      "example": {
+        "nombre": "Suspiro a la limeña",
+        "porcion": "Familiar"
+      },
+      "type": "object",
+      "properties": {
+        "nombre": {
+          "type": "string"
+        },
+        "porcion": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "nombre",
+        "porcion"
+      ]
+    },
+    "/ingredientesrequest": {
+      "title": "/ingredientesrequest",
+      "example": {
+        "nombre": "Harina 000"
+      },
+      "type": "object",
+      "properties": {
+        "nombre": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "nombre"
+      ]
+    },
+    "/ingredientes/<int:id>request": {
+      "title": "/ingredientes/<int:id>request",
+      "example": {
+        "nombre": "Polvo de hornear"
+      },
+      "type": "object",
+      "properties": {
+        "nombre": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "nombre"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "name": "Postres"
+    },
+    {
+      "name": "Preparacion"
+    },
+    {
+      "name": "Ingredientes"
+    }
+  ]
+}
